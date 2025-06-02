@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👨‍👩‍👧‍👦 5인 가족 강원도 힐링 여행 (4박 5일)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 사용자 정의 스타일 (필요한 경우) */
+        body {
+            font-family: 'Inter', sans-serif; /* Tailwind 기본 글꼴과 유사한 Inter 사용 */
+        }
+        .hero-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x400/a0aec0/ffffff?text=%EA%B0%95%EC%9B%90%EB%8F%84+%ED%92%8D%EA%B2%BD+%EC%9D%B4%EB%AF%B8%EC%A7%80');
+            background-size: cover;
+            background-position: center;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.625rem; /* 10px */
+            top: 0.5rem; /* 8px */
+            width: 1.25rem; /* 20px */
+            height: 1.25rem; /* 20px */
+            border-radius: 50%;
+            background-color: #3b82f6; /* blue-500 */
+            border: 2px solid white;
+        }
+        .timeline-content {
+            margin-left: 1.5rem; /* 24px */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="hero-banner text-white py-16 sm:py-24 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">👨‍👩‍👧‍👦 6인 가족 강원도 힐링 여행</h1>
+            <p class="text-xl sm:text-2xl">4박 5일간의 잊지 못할 추억 만들기</p>
+        </div>
+    </header>
+
+    <nav class="sticky-nav bg-gray-800 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 py-3 text-sm sm:text-base">
+                <li><a href="#trip-summary" class="hover:text-blue-300 transition duration-300">여행 개요</a></li>
+                <li><a href="#day1" class="hover:text-blue-300 transition duration-300">1일차</a></li>
+                <li><a href="#day2" class="hover:text-blue-300 transition duration-300">2일차</a></li>
+                <li><a href="#day3" class="hover:text-blue-300 transition duration-300">3일차</a></li>
+                <li><a href="#day4" class="hover:text-blue-300 transition duration-300">4일차</a></li>
+                <li><a href="#day5" class="hover:text-blue-300 transition duration-300">5일차</a></li>
+                <li><a href="#reminders" class="hover:text-red-300 transition duration-300 font-semibold">❗ 꼭 기억하세요!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <section id="trip-summary" class="bg-white p-6 rounded-lg shadow-xl mb-8 ring-1 ring-gray-200">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6 border-b-2 border-blue-200 pb-2 flex items-center">
+                <i class="fas fa-info-circle mr-3 text-blue-500"></i> 여행 개요
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+                <p><i class="fas fa-calendar-alt mr-2 text-blue-500"></i><strong>여행 기간:</strong> 2025년 6월 3일 (월) ~ 6월 7일 (금) (4박 5일)</p>
+                <p><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i><strong>주요 여행지:</strong> 평창 (휘닉스파크, 봉평), 두타산 자연휴양림(평창), 양양 (동호해변)</p>
+                <p><i class="fas fa-users mr-2 text-blue-500"></i><strong>가족 구성원:</strong> 5명 (조부모님 2명, 부모 2명, 아이 2명 - 8세, 5세)</p>
+                <p><i class="fas fa-star mr-2 text-blue-500"></i><strong>여행 테마:</strong> 휴식, 물놀이, 자연 체험, 지역 특미 만끽</p>
+            </div>
+        </section>
+
+        <div class="space-y-12">
+            <section id="day1" class="bg-white p-6 rounded-lg shadow-xl ring-1 ring-gray-200">
+                <h2 class="text-3xl font-bold text-green-600 mb-6 border-b-2 border-green-200 pb-2 flex items-center">
+                    <i class="fas fa-mountain mr-3 text-green-500"></i> DAY 1: 6월 3일 (월) - 설레는 출발 & 평창의 맛과 멋
+                </h2>
+                <div class="relative pl-4 border-l-2 border-green-300 space-y-6">
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-green-700 mb-1 timeline-content"><i class="fas fa-car mr-2"></i> 오전 (10:00 ~ 11:00): 용인 출발 → 평창 봉평으로!</h3>
+                        <p class="text-gray-600 timeline-content">이동 시간: 약 2시간 ~ 2시간 30분 예상</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-green-700 mb-1 timeline-content"><i class="fas fa-utensils mr-2"></i> 점심 (13:00 ~ 14:30 예상): <span class="text-yellow-600 font-bold">[봉평메밀미가연]</span></h3>
+                        <p class="text-gray-600 timeline-content">봉평 메밀 막국수 & 메밀 요리 (평창 특산물)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-green-700 mb-1 timeline-content"><i class="fas fa-arrow-right mr-2"></i> 오후 (14:30 ~ 15:00): 봉평 → 휘닉스파크 평창 이동</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-green-700 mb-1 timeline-content"><i class="fas fa-concierge-bell mr-2"></i> 체크인 (15:00 ~ 16:00): 휘닉스파크 리조트</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-green-700 mb-1 timeline-content"><i class="fas fa-child mr-2"></i> 아이들 활동 (16:00 ~ 18:00): <strong>[상상 놀이터]</strong></h3>
+                        <p class="text-gray-600 timeline-content">휘닉스파크 스키하우스 1층 (다양한 에어바운스, 볼풀, 보드게임 등)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-green-700 mb-1 timeline-content"><i class="fas fa-walking mr-2"></i> 어른들 휴식/산책 (16:00 ~ 18:00):</h3>
+                        <p class="text-gray-600 timeline-content">객실 휴식 또는 리조트 내 웰니스 숲길 등 산책</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-green-700 mb-1 timeline-content"><i class="fas fa-hamburger mr-2"></i> 저녁 (18:30 ~ 19:30): <span class="text-yellow-600 font-bold">[휘닉스파크 푸드코트]</span></h3>
+                        <p class="text-gray-600 timeline-content">다양한 메뉴 선택</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-green-700 mb-1 timeline-content"><i class="fas fa-moon mr-2"></i> 저녁 이후: 객실 휴식 및 리조트 산책</h3>
+                        <p class="text-gray-600 timeline-content"><i class="fas fa-bed mr-2 text-purple-500"></i><span class="font-semibold text-purple-600">숙소: 휘닉스파크 평창 리조트</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="day2" class="bg-white p-6 rounded-lg shadow-xl ring-1 ring-gray-200">
+                <h2 class="text-3xl font-bold text-teal-600 mb-6 border-b-2 border-teal-200 pb-2 flex items-center">
+                    <i class="fas fa-swimmer mr-3 text-teal-500"></i> DAY 2: 6월 4일 (화) - 워터파크 신나게! 맛집 저녁 후 숲으로
+                </h2>
+                <div class="relative pl-4 border-l-2 border-teal-300 space-y-6">
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-1 timeline-content"><i class="fas fa-water mr-2"></i> 오전 (10:00 ~ ): <strong>[블루캐니언 워터파크]</strong> 이용 준비</h3>
+                    </div>
+                     <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-1 timeline-content"><i class="fas fa-swimming-pool mr-2"></i> 물놀이 (10:00 ~ 17:00): <strong>[블루캐니언 워터파크]</strong></h3>
+                        <p class="text-gray-600 timeline-content">온 가족 물놀이 & 스파 (어르신들은 바데풀, 이벤트 스파에서 휴식)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-1 timeline-content"><i class="fas fa-shower mr-2"></i> 오후 (17:00 ~ 18:30): 워터파크 정리 → 체크아웃 → 진부면 이동</h3>
+                        <p class="text-gray-600 timeline-content"><strong>필수:</strong> 이동 전 진부면에서 저녁 외식</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-1 timeline-content"><i class="fas fa-utensils mr-2"></i> 저녁 (18:30 ~ 19:30): <span class="text-yellow-600 font-bold">[부일식당]</span> (진부면)</h3>
+                        <p class="text-gray-600 timeline-content">산채정식, 황태구이 등 (피로회복 외식)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-1 timeline-content"><i class="fas fa-tree mr-2"></i> 저녁 이후 (19:30 ~ 20:30): 진부면 → 두타산 자연휴양림(평창) 이동 및 체크인</h3>
+                        <p class="text-gray-600 timeline-content"><i class="fas fa-bed mr-2 text-purple-500"></i><span class="font-semibold text-purple-600">숙소: 국립 두타산 자연휴양림(평창) '숲속의집'</span></p>
+                        <p class="text-sm text-gray-500 timeline-content mt-1"><em>참고: 두타산 자연휴양림은 화요일 일반 방문객 휴무일이나, 숙박객은 체크인 가능합니다.</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="day3" class="bg-white p-6 rounded-lg shadow-xl ring-1 ring-gray-200">
+                <h2 class="text-3xl font-bold text-indigo-600 mb-6 border-b-2 border-indigo-200 pb-2 flex items-center">
+                    <i class="fas fa-hiking mr-3 text-indigo-500"></i> DAY 3: 6월 5일 (수) - 계곡 물놀이 & 숲 속 바비큐 파티
+                </h2>
+                <div class="relative pl-4 border-l-2 border-indigo-300 space-y-6">
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-1 timeline-content"><i class="fas fa-coffee mr-2"></i> 오전 (자유시간): 숲속의 집에서 아침 → 가벼운 숲 산책</h3>
+                        <p class="text-gray-600 timeline-content"><strong>(선택) 숲 체험 활동:</strong> 사전 문의 및 예약 내용에 따라 진행 (어르신/아이 동반 편안한 프로그램 확인)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-1 timeline-content"><i class="fas fa-tint mr-2"></i> 물놀이 (10:30 ~ 13:00): <strong>[막동계곡]</strong> (평창 진부면)</h3>
+                        <p class="text-gray-600 timeline-content">자연 계곡 물놀이 (안전 유의, 돗자리/간식 필수!)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-1 timeline-content"><i class="fas fa-shopping-cart mr-2"></i> 장보기 (14:30 ~ 15:30): <strong>[진부면 하나로마트]</strong></h3>
+                        <p class="text-gray-600 timeline-content">저녁 바비큐 및 다음날 아침 식재료 구매</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-1 timeline-content"><i class="fas fa-campground mr-2"></i> 오후 이후: 숙소 휴식 및 저녁 바비큐 준비</h3>
+                    </div>
+                     <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-1 timeline-content"><i class="fas fa-concierge-bell mr-2"></i> 식사:</h3>
+                        <ul class="list-disc list-inside text-gray-600 timeline-content">
+                            <li>아침: 자체 준비 (숲속의집)</li>
+                            <li>점심: 막동계곡 (도시락/간편식) 또는 진부면 식당</li>
+                            <li class="text-yellow-600 font-bold">저녁: <strong>[숲속의집 바비큐 파티]</strong> (하나로마트 구매 재료 활용)</li>
+                        </ul>
+                        <p class="text-gray-600 timeline-content mt-2"><i class="fas fa-bed mr-2 text-purple-500"></i><span class="font-semibold text-purple-600">숙소: 국립 두타산 자연휴양림(평창) '숲속의집'</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="day4" class="bg-white p-6 rounded-lg shadow-xl ring-1 ring-gray-200">
+                <h2 class="text-3xl font-bold text-pink-600 mb-6 border-b-2 border-pink-200 pb-2 flex items-center">
+                    <i class="fas fa-umbrella-beach mr-3 text-pink-500"></i> DAY 4: 6월 6일 (목) - 동해 바다 만끽 & 시원한 양양 물회
+                </h2>
+                <div class="relative pl-4 border-l-2 border-pink-300 space-y-6">
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-pink-700 mb-1 timeline-content"><i class="fas fa-sign-out-alt mr-2"></i> 오전 (09:30 ~ 11:30): 두타산 체크아웃 → 양양 오션바이브 펜션 이동</h3>
+                        <p class="text-gray-600 timeline-content">짐 보관 문의</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-pink-700 mb-1 timeline-content"><i class="fas fa-water mr-2"></i> 바다 물놀이 (13:30 ~ 16:00): <strong>[동호해변]</strong> (펜션 앞)</h3>
+                        <p class="text-gray-600 timeline-content">모래놀이 & 바다 물놀이 (어르신은 해변 그늘 휴식)</p>
+                    </div>
+                     <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-pink-700 mb-1 timeline-content"><i class="fas fa-key mr-2"></i> 체크인 (16:00 ~ 17:00): 양양 오션바이브 스파 펜션</h3>
+                        <p class="text-gray-600 timeline-content">샤워 및 휴식</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-pink-700 mb-1 timeline-content"><i class="fas fa-hot-tub mr-2"></i> 오후 (17:00 이후): (선택) 펜션 스파 또는 야외 수영장 이용</h3>
+                        <p class="text-sm text-gray-500 timeline-content mt-1"><em>단체가족룸 스파 유무 사전 확인 필수!</em></p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-pink-700 mb-1 timeline-content"><i class="fas fa-concierge-bell mr-2"></i> 식사:</h3>
+                        <ul class="list-disc list-inside text-gray-600 timeline-content">
+                            <li>아침: 자체 준비 (숲속의집)</li>
+                            <li class="text-yellow-600 font-bold">점심: <strong>[수산항물회]</strong> (양양 동호리, 째복 물회 등 현지 특미)</li>
+                            <li class="text-yellow-600 font-bold">저녁: 펜션 해산물 바비큐 또는 양양 지역 맛집 (섭국 등)</li>
+                        </ul>
+                        <p class="text-gray-600 timeline-content mt-2"><i class="fas fa-bed mr-2 text-purple-500"></i><span class="font-semibold text-purple-600">숙소: 양양 오션바이브 스파 펜션</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="day5" class="bg-white p-6 rounded-lg shadow-xl ring-1 ring-gray-200">
+                <h2 class="text-3xl font-bold text-gray-600 mb-6 border-b-2 border-gray-200 pb-2 flex items-center">
+                    <i class="fas fa-home mr-3 text-gray-500"></i> DAY 5: 6월 7일 (금) - 아쉬운 마무리 & 안전한 귀가
+                </h2>
+                <div class="relative pl-4 border-l-2 border-gray-300 space-y-6">
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1 timeline-content"><i class="fas fa-coffee mr-2"></i> 오전 (자유시간): 펜션에서 아침 식사 후 동호해변 마지막 산책</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1 timeline-content"><i class="fas fa-suitcase-rolling mr-2"></i> 체크아웃 (10:30 ~ 11:00): 양양 오션바이브 스파 펜션</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1 timeline-content"><i class="fas fa-car-side mr-2"></i> 오후: 용인 자택으로 출발 (안전 운전!)</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1 timeline-content"><i class="fas fa-concierge-bell mr-2"></i> 식사:</h3>
+                        <ul class="list-disc list-inside text-gray-600 timeline-content">
+                            <li>아침: 펜션 자체 준비 또는 근처 식당/카페</li>
+                            <li>점심: 귀갓길 휴게소 또는 경로상 맛집</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="reminders" class="mt-12 bg-yellow-50 p-6 rounded-lg shadow-xl border-l-4 border-yellow-400">
+            <h2 class="text-3xl font-bold text-yellow-700 mb-6 flex items-center">
+                <i class="fas fa-exclamation-triangle mr-3 text-yellow-600"></i> 꼭 기억하세요! (여행 전 최종 확인 사항)
+            </h2>
+            <ul class="list-disc list-inside space-y-3 text-yellow-800">
+                <li><strong>두타산 자연휴양림(평창) 체험 프로그램 (6/5 수):</strong> 운영 여부, 종류, 예약 방법 문의 (📞 033-334-8815)</li>
+                <li><strong>양양 오션바이브 펜션 '단체가족룸' 스파 시설:</strong> 개별 스파 포함 여부, 공용 스파 이용 조건 등 펜션 직접 문의</li>
+                <li><strong>양양 카누/카약 체험 (6/6 목, 공휴일):</strong> 운영 여부 및 예약 가능성 여행일 근접 또는 현지 도착 후 확인</li>
+                <li><strong>두타산 자연휴양림 식재료 사전 구매:</strong> 6월 5일 저녁 바비큐 및 다음날 아침 식재료는 6월 5일 진부 하나로마트에서 구매 (6월 4일 저녁은 외식)</li>
+                <li><strong>상비약 및 안전용품:</strong> 꼼꼼히 챙기시고, 물놀이 등 활동 시 안전에 유의하세요.</li>
+                <li><strong>교통상황:</strong> 특히 공휴일(6/6)에는 실시간 교통 정보를 확인하세요.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="mt-12 bg-gray-800 text-white py-8 text-center">
+        <p>&copy; 2025 우리가족 행복한 강원도 여행 계획. 즐거운 추억 만드세요!</p>
+    </footer>
+
+</body>
+</html>
