@@ -22,7 +22,7 @@
             background: #ffffff;
             padding: 20px 40px;
             border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0ㄱ, 0, 0.1);
         }
 
         header {
@@ -44,11 +44,6 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: #fafcff;
-            transition: box-shadow 0.3s ease;
-        }
-        
-        .step:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
         }
 
         h2 {
@@ -66,12 +61,20 @@
         }
         
         ol {
-            padding-left: 25px;
+            padding-left: 20px;
         }
 
         strong, b {
             color: #e74c3c;
             font-weight: 700;
+        }
+        
+        .code-highlight {
+            background-color: #e0eaf1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'D2Coding', monospace;
+            color: #2c3e50;
         }
 
         .prompt-box {
@@ -116,6 +119,61 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* --- Visual Step Card Styles --- */
+        .step-cards-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .step-card {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            border: 1px solid #e0e6ed;
+            border-left: 5px solid #3498db;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        .step-card-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            color: #3498db;
+        }
+
+        .step-card-content h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+
+        .step-card-content p {
+            margin: 0;
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .final-step-card {
+            border-left-color: #27ae60;
+        }
+
+        .final-step-card .step-card-icon {
+            color: #27ae60;
+        }
+
 
         footer {
             text-align: center;
@@ -179,39 +237,62 @@
         </div>
 
         <div class="step">
-            <h2>3단계: 내 컴퓨터에서 미리보기 (확인)</h2>
-            <p>코드가 웹페이지처럼 잘 보이는지 내 컴퓨터에서 먼저 확인합니다.</p>
-            <ol>
-                <li>컴퓨터의 기본 <strong>메모장</strong> 또는 <strong>TextEdit</strong>을 켭니다.</li>
-                <li>AI가 준 코드 전체를 복사하여 붙여넣습니다.</li>
-                <li>파일을 저장할 때, 파일 이름을 <strong><code>index.html</code></strong> 로, 파일 형식을 <strong>'모든 파일(All files)'</strong>로 지정하여 저장합니다.</li>
-                <li>저장된 `index.html` 파일을 더블클릭하면 웹 브라우저에서 결과물을 미리 볼 수 있습니다.</li>
-            </ol>
+            <h2>3단계: GitHub에 코드 올려 웹페이지 만들기</h2>
+            <p>이제 여러분의 코드를 인터넷 세상에 공개할 시간입니다. GitHub이라는 코드 저장소에 우리만의 프로젝트 공간을 만들고, 그곳에 AI가 만들어준 코드를 올려보겠습니다.</p>
+            <div class="step-cards-container">
+                <div class="step-card">
+                    <div class="step-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5v6m3-3H9m4.06-7.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg>
+                    </div>
+                    <div class="step-card-content">
+                        <h4>1. 새 저장소(Repository) 만들기</h4>
+                        <p><a href="https://github.com/" target="_blank">GitHub</a>에 로그인 후, <strong>'Create new repository'</strong> 버튼을 클릭하세요. 저장소 이름을 <code class="code-highlight">my-awesome-trip</code> 처럼 정하고, <strong>'Public'</strong> 및 <strong>'Add a README file'</strong>을 체크한 뒤 생성합니다.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-card-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>
+                    </div>
+                    <div class="step-card-content">
+                        <h4>2. 새 파일(index.html) 생성하기</h4>
+                        <p>만들어진 저장소에서 <strong>'Add file' > 'Create new file'</strong>을 선택하세요. 파일 이름은 반드시 <code class="code-highlight">index.html</code>이라고 입력해야 합니다.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg>
+                    </div>
+                    <div class="step-card-content">
+                        <h4>3. 코드 붙여넣고 저장하기</h4>
+                        <p>2단계에서 AI가 만들어 준 HTML 코드 전체를 복사해서 큰 편집창에 붙여넣습니다. 그리고 페이지 맨 아래의 <strong>'Commit new file'</strong> 버튼을 클릭하여 저장하세요.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="step">
-            <h2>4단계: GitHub에 코드 올리기</h2>
-            <p>이제 코드를 인터넷 공간(GitHub)에 올려서 다른 사람들도 볼 수 있게 준비합니다.</p>
-            <ol>
-                <li><a href="https://github.com/" target="_blank">GitHub</a>에 로그인 후, <strong>'Create new repository'</strong>를 클릭합니다.</li>
-                <li>저장소 이름(Repository name)을 <strong><code>my-first-webpage</code></strong> 등으로 입력합니다. (영문, 공백 없음)</li>
-                <li><strong>'Public'</strong>을 반드시 선택하고, <strong>'Add a README file'</strong>에 체크합니다.</li>
-                <li><strong>'Create repository'</strong> 버튼을 눌러 저장소를 만듭니다.</li>
-                <li>만들어진 저장소에서 <strong>'Add file' > 'Upload files'</strong>를 클릭합니다.</li>
-                <li>아까 만든 <strong><code>index.html</code></strong> 파일을 업로드하고, <strong>'Commit changes'</strong> 버튼을 눌러 저장합니다.</li>
-            </ol>
-        </div>
-
-        <div class="step">
-            <h2>5단계: GitHub Pages로 진짜 웹페이지 발행하기</h2>
-            <p>마지막 단계입니다! 업로드한 코드를 실제 인터넷 주소로 만듭니다.</p>
-            <ol>
-                <li>프로젝트 저장소 상단의 <strong>'Settings'</strong> 탭을 클릭합니다.</li>
-                <li>왼쪽 메뉴에서 <strong>'Pages'</strong>를 클릭합니다.</li>
-                <li>'Branch' 섹션에서 드롭다운 메뉴를 <strong>'None'</strong>에서 <strong><code>main</code></strong>으로 변경하고 <strong>'Save'</strong>를 누릅니다.</li>
-                <li>잠시 (1~2분) 기다리면, 페이지 상단에 <strong>"Your site is live at..."</strong> 라는 메시지와 함께 웹사이트 주소가 나타납니다.</li>
-                <li>그 주소를 클릭하면, 여러분만의 웹페이지가 완성됩니다! 이 주소는 누구에게나 공유할 수 있습니다.</li>
-            </ol>
+            <h2>4단계: GitHub Pages로 진짜 웹페이지 발행하기</h2>
+            <p>마지막 단계입니다! 업로드한 코드를 실제 인터넷 주소로 바꾸어 누구나 접속할 수 있게 만듭니다.</p>
+             <div class="step-cards-container">
+                <div class="step-card">
+                    <div class="step-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-1.007 1.11-1.226a2.25 2.25 0 0 1 2.584.283l.115.115a2.25 2.25 0 0 0 2.584-.283c.55-.219 1.02-.684 1.11-1.226l.099-.542a2.25 2.25 0 0 1 2.25-1.956h.002c.97.001 1.81.623 2.146 1.5.337.877.126 1.865-.54 2.54l-2.12 2.12c-.224.225-.335.537-.335.85V9a2.25 2.25 0 0 1-2.25 2.25h-5.379a2.25 2.25 0 0 1-1.591-.659l-2.121-2.121c-.667-.675-.878-1.663-.541-2.54.336-.877 1.176-1.499 2.146-1.5h.001a2.25 2.25 0 0 1 2.25 1.956l.099.542ZM9.594 15.94c.09.542.56 1.007 1.11 1.226a2.25 2.25 0 0 1 2.584-.283l.115-.115a2.25 2.25 0 0 0 2.584.283c.55.219 1.02.684 1.11 1.226l.099.542a2.25 2.25 0 0 1 2.25 1.956h.002c.97 0 1.81-.623 2.146-1.5.337-.877.126-1.865-.54-2.54l-2.12-2.12c-.224-.225-.335-.537-.335-.85V15a2.25 2.25 0 0 1-2.25-2.25h-5.379a2.25 2.25 0 0 1-1.591.659l-2.121 2.121c-.667.675-.878-1.663-.541-2.54.336-.877 1.176-1.499 2.146-1.5h.001a2.25 2.25 0 0 1 2.25 1.956l.099.542Z" /></svg>
+                    </div>
+                    <div class="step-card-content">
+                        <h4>1. Pages 설정으로 이동하기</h4>
+                        <p>프로젝트 저장소 상단의 <strong>'Settings'</strong> 탭을 누른 후, 왼쪽 메뉴에서 <strong>'Pages'</strong>를 클릭하세요.</p>
+                    </div>
+                </div>
+                <div class="step-card final-step-card">
+                    <div class="step-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" /></svg>
+                    </div>
+                    <div class="step-card-content">
+                        <h4>2. 웹페이지 주소 활성화하기</h4>
+                        <p>'Branch' 섹션에서 드롭다운 메뉴를 'None'에서 <code class="code-highlight">main</code>으로 바꾸고 <strong>'Save'</strong>를 누르세요. 1~2분 뒤 페이지가 새로고침되면, 상단에 여러분의 웹사이트 주소가 나타납니다!</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer>
